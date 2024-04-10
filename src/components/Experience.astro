@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE= [
+    {
+       
+        date:"June 2020",
+        title:"Software Developer Intern",
+        description:'Worked on a team to develop an application for managing inventory and sales. Responsible for writing clean, efficient code in Java',
+    },
+    {
+        date:"April 2019 - June 2020",
+        title: "Web Development Team Lead, Game Development Team Member",
+        description:'Developed a web application for managing game inventory and sales data using NodeJS/Express, MongoDB, ReactJS/Red',
+
+    },
+    {
+        date:"April 2019 - June 2020",
+        title: "Web Development Team Lead, Game Development Team Member",
+        description:'Developed a web application for managing game inventory and sales data using NodeJS/Express, MongoDB, ReactJS/Red',
+
+    },
+]
+
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">       
+    {
+        EXPERIENCIE.map((experiencie) => (
+        <li class="mb-10 ms-4">
+            <ExperienceItem {...experiencie} />
+        </li>
+        ))
+    }           
+   
+</ol>
+

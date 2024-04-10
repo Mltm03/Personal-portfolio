@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from  '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout 
+title="Porfolio de Manlio Torres - Desarrollador y programador web.", 
+>
+	<main>
+	<SectionContainer class="py-44 pb-22">
+		<img 
+		class="rounded-full w-16 h-16"
+		src="/src/Assets/perfilphoto.jpeg" 
+		alt="Manlio photo">
+		<br>
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4"> Hey, Soy Manlio Torres 
+			<a 
+			href="https://www.linkedin.com/in/manlio-torres-mart%C3%ADnez-5abab3229/"
+			target="_blank"
+			rel="noopener"
+			class="flex justify-center items-center"
+			>
+			<Badge>Disponible para trabajar</Badge>
+			</a>
+		</h1> 
+		<h2 class="text-2xl text-wrap"> <span>2 años de experiencia</span>,<span class="text-yellow-200/90"> desarrollador web </span>  <span class="opacity-80"> y actualmente estudiante de ingenieria en Sistemas Computacionales</span>  </h2>
+		<br>
+		<nav class="flex gap-x-2">
+
+			<SocialPill  href="https://www.linkedin.com/in/manlio-torres-mart%C3%ADnez-5abab3229">
+				<LinkedInIcon class="size-6"  />LinkedIn
+			</SocialPill>
+			<br>
+			<SocialPill  href="https://github.com/Mltm03">
+				<GitHubIcon class="size-6"  />GitHub
+			</SocialPill>
+			<br>
+			<SocialPill  href="https://www.gmail.com">
+				<MailIcon class="size-6"  />lt.lenin311@gmail.com
+			</SocialPill>
+			
+
+		</nav>
+	</SectionContainer>
+
+
+	<SectionContainer>
+		<h2 class="text-2xl font-semibold mb-6" >Experiencia Laboral</h2>
+		<Experience />
+
+	
+	</SectionContainer>
+	</main>
+</Layout>
+
+
